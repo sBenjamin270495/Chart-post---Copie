@@ -1,0 +1,16 @@
+<article class="rental">
+  <div class="details">
+    <div class="dvbutton">
+      <button type="button" style="background:rgb(255, 99, 132) !important" class=" button" {{action "ChangeData" "Instagram" }}>Instagram Chart</button>
+      <button type="button" style="background:#016aba !important" class=" button" {{action "ChangeData" "Pin" }}>Pin Chart</button>
+      <button type="button" style="background:#e46855 !important" class=" button" {{action "ChangeData" "Youtube" }}>Youtube Chart</button>
+      <button type="button" style="background:#398f21 !important" class=" button" {{action "ChangeData" "Article" }}>Article Chart</button>
+      <button type="button" style="background:#8c0391 !important" class=" button" {{action "ChangeData" "Tweet" }}>Tweet Chart</button>
+      <button type="button" style="background:#edec15 !important" class=" button" {{action "ChangeData" "Facebook" }}>Facebook Chart</button>
+    </div>
+      <h1 class="middleTittle" >Total of post : {{this.NbPostTotalLive}}</h1>
+      <h3 class="middleTittle">{{this.ChoseChart}} Post Bubble Chart</h3>
+      <h5 class="middleTittle">Number of {{this.ChoseChart}} Post : {{this.NbPostLive}}</h5>
+    {{ember-chart type='bubble' data=this.dataup options=this.option }}
+  </div>
+</article>

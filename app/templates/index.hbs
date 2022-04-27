@@ -1,0 +1,8 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome to Chart Post!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p>
+</div>
+{{#each @model as |datachart|}}
+<Graph @data={{datachart}} />
+{{/each}}
